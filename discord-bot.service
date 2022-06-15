@@ -1,0 +1,14 @@
+[Unit]
+Description=sabatate mc bot
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/discord-bot/start.sh
+WorkingDirectory=/home/ubuntu/discord-bot
+KillMode=control-group
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

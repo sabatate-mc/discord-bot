@@ -45,7 +45,7 @@ client.on('interactionCreate', async (interaction) => {
 
     if (state === 80) {
       // stopped
-      await interaction.reply('Minecraft サーバーを起動します......。')
+      await interaction.reply('AWS EC2 サーバーを起動します......。')
       await ec2Client.send(
         new StartInstancesCommand({
           InstanceIds: [serverInstanceId]

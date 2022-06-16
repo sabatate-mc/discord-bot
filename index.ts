@@ -53,7 +53,7 @@ client.on('interactionCreate', async (interaction) => {
       )
     } else {
       await interaction.reply(
-        'Minecraft サーバーが停止中ではありません。\n' +
+        'Minecraft サーバーが停止済みではありません。\n' +
           'サーバーが停止してから再度実行してください。'
       )
     }
